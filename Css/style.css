@@ -1,0 +1,426 @@
+/* Start Variables */
+:root {
+	/* Primary */
+	--Strong-Cyan: #26baa4;
+	--Light-Blue: #6173ff;
+
+	/* Neutral */
+	--Dark-Grayish-Blue: #4c545d;
+	--Grayish-Blue: #9fabb2;
+
+	--line-height: 1.8;
+	--padding-top: 100px;
+}
+/* End Variables */
+
+body {
+	font-family: "Bai Jamjuree", sans-serif;
+	font-size: 18px;
+}
+
+/* Start Framework */
+.center-position {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+/* Start Download */
+.download-box {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(300px, 1fr));
+	gap: 115px;
+	height: 100px;
+	margin-top: var(--padding-top);
+}
+
+.download-box div {
+	width: 377.7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90px;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.iOS {
+	color: white;
+	background-color: var(--Strong-Cyan);
+	margin: auto;
+	margin-left: 125px;
+	box-shadow: inset 0px -7px 7px 0px #1c9280, 5px 24px 49px 15px #bac6ce;
+}
+
+.mac {
+	color: white;
+	background-color: var(--Light-Blue);
+	margin: auto 0;
+	box-shadow: inset 0px -7px 7px 0px #505897, 5px 24px 49px 15px #bac6ce;
+}
+/* End Download */
+
+/* Start Special Headings */
+/* Start Special Heading One */
+.special-heading {
+	color: var(--Dark-Grayish-Blue);
+	text-align: center;
+	/* margin-top: 100px; */
+	padding-top: var(--padding-top);
+}
+
+.special-heading + p {
+	text-align: center;
+	color: var(--Grayish-Blue);
+	line-height: var(--line-height);
+}
+/* End Special Heading One */
+
+/* Start Special Heading Two */
+.special-h3 {
+	color: var(--Dark-Grayish-Blue);
+}
+
+.special-h3 + p {
+	color: var(--Grayish-Blue);
+	line-height: var(--line-height);
+}
+/* End Special Heading Two */
+
+/* End Special Headings */
+
+/* End Framework */
+
+* {
+	box-sizing: border-box;
+}
+
+/* Start Container */
+.container {
+	width: 100%;
+	padding: 0 200px;
+}
+
+/* End Container */
+
+/* Start Header */
+
+/* Start Header Image */
+header {
+	width: 100%;
+	position: relative;
+}
+header img {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* End Header Image */
+
+/* Start Logo */
+header .logo img {
+	width: 125px;
+	height: 125px;
+}
+/* End Logo */
+
+/* End Header */
+.intro-text {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -120px;
+}
+
+.intro-text h1 {
+	color: var(--Dark-Grayish-Blue);
+	font-weight: 600;
+	line-height: var(--line-height);
+}
+
+.intro-text p {
+	width: calc(100% - 32%);
+	color: var(--Grayish-Blue);
+	line-height: var(--line-height);
+}
+
+/* Start One */
+.one-content {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(300px, 1fr));
+	gap: 300px;
+	padding-top: var(--padding-top);
+}
+
+.one-content .image {
+	width: 752px;
+	margin-left: 30px;
+}
+
+.one-content .image img {
+	max-width: 100%;
+}
+
+.one-content .info .card h3 {
+	margin-top: 50px;
+}
+/* End One */
+
+/* Start Two */
+.two .two-content {
+	padding-top: var(--padding-top);
+	width: 100%;
+}
+
+.two .two-content .image {
+	width: 905px;
+	/* margin-left: calc((100% - 905px) / 2); */
+	margin: auto;
+}
+
+.two .two-content .image img {
+	max-width: 100%;
+	width: 100%;
+}
+/* End Two */
+
+/* Start Three */
+.three .three-content {
+	padding-top: var(--padding-top);
+}
+
+.three .three-content .cards {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(300px, 1fr));
+	gap: 50px;
+}
+
+.three .three-content .cards .card {
+	text-align: center;
+}
+
+/* Team */
+.three .three-content .team-cards {
+	padding-top: var(--padding-top);
+	display: grid;
+	grid-template-columns: repeat(5, minmax(300px, 1fr));
+	gap: 4px;
+	text-align: center;
+}
+/* End Three */
+
+/* Start Footer */
+footer {
+	margin-top: var(--padding-top);
+	background-color: #eee;
+}
+
+.footer-content {
+	height: 125px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .footer-content .logo {
+	width: 60px;
+	margin: auto;
+}
+
+footer .footer-content .logo .image {
+	width: 100%;
+	max-width: 100%;
+}
+
+footer .footer-content .logo .image img {
+	width: 100%;
+	max-width: 100%;
+}
+
+footer .footer-content .links {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 20px;
+	row-gap: 20px;
+	margin: auto;
+}
+
+footer .footer-content .links div {
+	color: var(--Grayish-Blue);
+	cursor: pointer;
+}
+
+footer .footer-content .social {
+	margin: auto;
+}
+
+footer .footer-content .social i {
+	margin-right: 20px;
+	margin-left: 20px;
+	color: var(--Dark-Grayish-Blue);
+	transition-duration: 0.3s;
+}
+
+footer .footer-content .social i:last-child {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+footer .footer-content .social .facebook {
+	margin-right: 7px !important;
+}
+
+footer .footer-content .social .facebook:hover {
+	color: #036fe5;
+}
+
+footer .footer-content .social .twitter:hover {
+	color: #3897ff;
+}
+
+footer .footer-content .social .youtube:hover {
+	color: #ff0000;
+}
+/* End Footer */
+
+/* Media mobile 375*/
+@media (min-width: 375px) and (max-width: 376px) {
+	footer .footer-content .links {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		gap: 30px;
+		text-align: center;
+		padding-top: calc(var(--padding-top) / 2);
+		padding-bottom: calc(var(--padding-top) / 2);
+	}
+
+	footer .footer-content {
+		flex-direction: column;
+		height: fit-content;
+		padding-bottom: 40px;
+	}
+
+	footer .footer-content .logo .image img {
+		margin-top: 35px;
+	}
+
+	footer .footer-content .links .ending .container p::before {
+		content: "Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard";
+	}
+
+	.three .three-content .cards {
+		grid-template-columns: repeat(1, minmax(300px, 1fr));
+	}
+
+	.three .three-content .team-cards {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 50px;
+		margin: auto;
+	}
+
+	.container {
+		padding: 0 20px;
+	}
+
+	header img {
+		width: 100%;
+		height: 363px;
+	}
+
+	.intro-text h1 {
+		font-size: 32px;
+	}
+
+	.intro-text p span {
+		display: none;
+	}
+
+	.intro-text p::before {
+		content: "Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.";
+		font-size: 15px;
+	}
+
+	.download-box {
+		height: 200px;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 20px;
+		margin-top: 0;
+	}
+
+	.download-box div {
+		width: 320px;
+		height: 70px;
+	}
+
+	.iOS {
+		box-shadow: inset 0px -7px 7px 0px #1c9280, 3px 9px 10px 0px #cbd8e0;
+		margin: 0;
+		margin-top: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.mac {
+		box-shadow: inset 0px -7px 7px 0px #505897, 3px 9px 10px 0px #cbd8e0;
+		margin: 0;
+		margin-bottom: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.one-content {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 20px;
+	}
+
+	.one-content .info {
+		text-align: center;
+	}
+
+	.one-content .image {
+		width: 315px;
+	}
+
+	.two .container p::before {
+		content: "Whether you're on the go, or at your computer, you canaccess all your Clipboardsnippets in a few simple clicks.";
+	}
+
+	span.mobile-none {
+		display: none;
+	}
+
+	.two .two-content .image {
+		width: 370px;
+	}
+}
+
+/* Media desktop 1440*/
+@media (min-width: 1440px) and (max-width: 1441px) {
+	header {
+		width: calc(100% + 76px);
+	}
+
+	footer {
+		width: calc(100% + 76px);
+	}
+
+	.download-box {
+		position: relative;
+	}
+
+	.download-box div {
+		position: absolute;
+		margin: auto;
+	}
+
+	.iOS {
+		left: 100px;
+	}
+
+	.mac {
+		right: 100px;
+	}
+}
